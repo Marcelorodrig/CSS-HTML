@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        col.cnome{
+            background-color: blue;
+        }
+        col.cprof{
+            background-color: aqua;
+        }
+        col.cgrupo{
+            background-color: chartreuse;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+      <!--
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+       --> 
+       
+       <!--
+          <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="3">
+    </colgroup>
+        -->
+
+         <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+
+
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Juliana</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Veterinaria</td>
+        </tr>
+        <tr>
+            <td>Mayara</td>
+            <td>29</td>
+            <td>F</td>
+            <td>Medica</td>
+        </tr>
+        <tr>
+            <td>Marcelo</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Analista de Sistema</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
