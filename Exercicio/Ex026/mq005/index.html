@@ -6,8 +6,9 @@
     <title>Midia Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/midia-query.css">
 </head>
-<body>
+<body onresize="mudouTanho()">
     <header>
         <h1>Meu Site</h1>
 
@@ -36,6 +37,15 @@
         </article>
     </main>
     <script>
+        function mudouTanho(){
+            if(Window.innerwidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+        
        function clickMenu(){
        if (itens.style.display == 'block'){
             itens.style.display = "none"
